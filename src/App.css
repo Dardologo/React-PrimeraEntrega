@@ -1,4 +1,26 @@
-body {
-  background-color: white;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Permanent+Marker&display=swap');
+.color_fondo_header {
+  background-color: #F1E705;
 }
 
+.color-negro {
+  color: black;
+}
+
+.greeting {
+  text-align: center;
+  background-color: #F1E705;
+  padding: .125rem;
+}
+.prueba {
+  display: flex;
+  direction: row;
+  justify-content: space-evenly;
+
+}
+
+.nav-link{
+  font-family: 'Permanent Marker', cursive;
+  color: white;
+  font-size: 20px;
+}
