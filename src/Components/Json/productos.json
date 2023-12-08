@@ -68,5 +68,155 @@
             "id": "futbol"
         },
         "precio": 1000
+    },
+    {
+        "id": "8",
+        "titulo": "Accesorio 01",
+        "imagen": "./img/accesorios/a1.jpg",
+        "categoria": {
+            "nombre": "Accesorios",
+            "id": "accesorios"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "9",
+        "titulo": "Accesorio 02",
+        "imagen": "./img/accesorios/a2.jpg",
+        "categoria": {
+            "nombre": "Accesorios",
+            "id": "accesorios"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "10",
+        "titulo": "Accesorio 03",
+        "imagen": "./img/accesorios/a3.jpg",
+        "categoria": {
+            "nombre": "Accesorios",
+            "id": "accesorios"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "11",
+        "titulo": "Accesorio 04",
+        "imagen": "./img/accesorios/a4.jpg",
+        "categoria": {
+            "nombre": "Accesorios",
+            "id": "accesorios"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "12",
+        "titulo": "Accesorio 05",
+        "imagen": "./img/accesorios/a5.jpg",
+        "categoria": {
+            "nombre": "Accesorios",
+            "id": "accesorios"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "13",
+        "titulo": "Accesorio 06",
+        "imagen": "./img/accesorios/a6.jpg",
+        "categoria": {
+            "nombre": "Accesorios",
+            "id": "accesorios"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "14",
+        "titulo": "Accesorio 07",
+        "imagen": "./img/accesorios/a7.jpg",
+        "categoria": {
+            "nombre": "Accesorios",
+            "id": "accesorios"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "15",
+        "titulo": "Accesorio 08",
+        "imagen": "./img/accesorios/a8.jpg",
+        "categoria": {
+            "nombre": "Accesorios",
+            "id": "accesorios"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "16",
+        "titulo": "Accesorio 09",
+        "imagen": "./img/accesorios/a9.jpg",
+        "categoria": {
+            "nombre": "Accesorios",
+            "id": "accesorios"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "17",
+        "titulo": "Basquet 01",
+        "imagen": "./img/basquet/b1.jpg",
+        "categoria": {
+            "nombre": "Basquet",
+            "id": "basquet"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "18",
+        "titulo": "Basquet 02",
+        "imagen": "./img/basquet/b2.jpg",
+        "categoria": {
+            "nombre": "Basquet",
+            "id": "basquet"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "19",
+        "titulo": "Basquet 03",
+        "imagen": "./img/basquet/b3.jpg",
+        "categoria": {
+            "nombre": "Basquet",
+            "id": "basquet"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "20",
+        "titulo": "Basquet 04",
+        "imagen": "./img/basquet/b4.jpg",
+        "categoria": {
+            "nombre": "Basquet",
+            "id": "basquet"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "21",
+        "titulo": "Basquet 05",
+        "imagen": "./img/basquet/b5.jpg",
+        "categoria": {
+            "nombre": "Basquet",
+            "id": "basquet"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "22",
+        "titulo": "Basquet 06",
+        "imagen": "./img/basquet/b6.jpg",
+        "categoria": {
+            "nombre": "Basquet",
+            "id": "basquet"
+        },
+        "precio": 1000
     }
 ]

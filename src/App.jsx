@@ -18,11 +18,12 @@ function App() {
         <NavBar />
        
         <Routes>
-        <Route path='/' element ={ <ItemListContainer greeting='Bienvenidos a Beccaritas Sports 😊 ' />}/>
-        <Route path='/category/:id' element={<ItemListContainer/>}/>  
-        <Route path='/item/:id' element={<ItemListContainer/>}/>  
-        <Route path='category/:id' element={<ItemListContainer/>}/>  
-        <Route path='*' element={<Error/>}/>  
+        <Route path={'/'} element ={ <ItemListContainer greeting='Bienvenidos a Beccaritas Sports 😊 ' />}/>
+        <Route path={'/category/:id'} element={<ItemListContainer/>}/>  
+        <Route path={'/item/:id'} element={<ItemListContainer/>}/>  
+        <Route path={'category/:id'} element={<ItemListContainer/>}/>  
+        <Route path={'/cart'} element= {<CartWidget/> } /> 
+        <Route path={'*'} element={<Error/>}/>  
 
 
         </Routes>
