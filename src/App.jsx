@@ -19,11 +19,12 @@ function App() {
        
         <Routes>
         <Route path='/' element ={ <ItemListContainer greeting='Bienvenidos a Beccaritas Sports 😊 ' />}/>
-        <Route path='/Accesorios' element ={ <Accesorios/>}/>
-        <Route path='/Futbol' element ={ <Futbol/>}/>
-        <Route path='/Basquet' element ={ <Basquet />}/>
-        <Route path='/cart' element= {<CartWidget/>}/>
-        <Route path='*' element ={<Error/>}/>
+        <Route path='/category/:id' element={<ItemListContainer/>}/>  
+        <Route path='/item/:id' element={<ItemListContainer/>}/>  
+        <Route path='category/:id' element={<ItemListContainer/>}/>  
+        <Route path='*' element={<Error/>}/>  
+
+
         </Routes>
        
         </BrowserRouter>

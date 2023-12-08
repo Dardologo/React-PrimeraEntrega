@@ -1,6 +1,6 @@
 [
     {
-        "id": "f1",
+        "id": "1",
         "titulo": "Futbol 01",
         "imagen": "../../assets/img/futbol/f1.jpg",
         "categoria": {
@@ -10,7 +10,7 @@
         "precio": 1000
     },
     {
-        "id": "f2",
+        "id": "2",
         "titulo": "Futbol 02",
         "imagen": "../../assets/img/futbol/f2.jpg",
         "categoria": {
@@ -20,7 +20,7 @@
         "precio": 1000
     },
     {
-        "id": "f3",
+        "id": "3",
         "titulo": "Futbol 03",
         "imagen": "../../assets/img/futbol/f3.jpg",
         "categoria": {
@@ -30,7 +30,7 @@
         "precio": 1000
     },
     {
-        "id": "f4",
+        "id": "4",
         "titulo": "Futbol 04",
         "imagen": "../../assets/img/futbol/f4.jpg",
         "categoria": {
@@ -40,7 +40,7 @@
         "precio": 1000
     },
     {
-        "id": "f5",
+        "id": "5",
         "titulo": "Futbol 05",
         "imagen": "../../assets/img/futbol/f5.jpg",
         "categoria": {
@@ -50,7 +50,7 @@
         "precio": 1000
     },
     {
-        "id": "f6",
+        "id": "6",
         "titulo": "Futbol 06",
         "imagen": "../../assets/img/futbol/f6.jpg",
         "categoria": {
@@ -60,7 +60,7 @@
         "precio": 1000
     },
     {
-        "id": "f7",
+        "id": "7",
         "titulo": "Futbol 07",
         "imagen": "../../assets/img/futbol/f7.jpg",
         "categoria": {
