@@ -12,7 +12,7 @@ function NavBar() {
     <Navbar bg="dark" data-bs-theme="dark">
     <Container fluid className='navbar' >
       <Navbar.Brand to="/"> <Logo/> </Navbar.Brand>
-      <Nav className="me-auto ">
+      <Nav className="me-auto">
         <Link to="/">HOME</Link>
         <Link to="/category/accesorios" >ACCESORIOS</Link>
         <Link to="/category/futbol" >FUTBOL</Link>

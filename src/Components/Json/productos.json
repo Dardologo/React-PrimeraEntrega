@@ -2,7 +2,7 @@
     {
         "id": "1",
         "titulo": "Futbol 01",
-        "imagen": "../../assets/img/futbol/f1.jpg",
+        "imagen": "/img/f1.jpg",
         "categoria": {
             "nombre": "Futbol",
             "id": "futbol"
@@ -12,7 +12,7 @@
     {
         "id": "2",
         "titulo": "Futbol 02",
-        "imagen": "../../assets/img/futbol/f2.jpg",
+        "imagen": "/img/f2.jpg",
         "categoria": {
             "nombre": "Futbol",
             "id": "futbol"
@@ -22,7 +22,7 @@
     {
         "id": "3",
         "titulo": "Futbol 03",
-        "imagen": "../../assets/img/futbol/f3.jpg",
+        "imagen": "/img/f3.jpg",
         "categoria": {
             "nombre": "Futbol",
             "id": "futbol"
@@ -32,7 +32,7 @@
     {
         "id": "4",
         "titulo": "Futbol 04",
-        "imagen": "../../assets/img/futbol/f4.jpg",
+        "imagen": "/img/f4.jpg",
         "categoria": {
             "nombre": "Futbol",
             "id": "futbol"
@@ -42,7 +42,7 @@
     {
         "id": "5",
         "titulo": "Futbol 05",
-        "imagen": "../../assets/img/futbol/f5.jpg",
+        "imagen": "/img/f5.jpg",
         "categoria": {
             "nombre": "Futbol",
             "id": "futbol"
@@ -52,7 +52,7 @@
     {
         "id": "6",
         "titulo": "Futbol 06",
-        "imagen": "../../assets/img/futbol/f6.jpg",
+        "imagen": "/img/f6.jpg",
         "categoria": {
             "nombre": "Futbol",
             "id": "futbol"
@@ -62,7 +62,7 @@
     {
         "id": "7",
         "titulo": "Futbol 07",
-        "imagen": "../../assets/img/futbol/f7.jpg",
+        "imagen": "/img/f7.jpg",
         "categoria": {
             "nombre": "Futbol",
             "id": "futbol"
@@ -72,7 +72,7 @@
     {
         "id": "8",
         "titulo": "Accesorio 01",
-        "imagen": "./img/accesorios/a1.jpg",
+        "imagen": "/img/a1.jpg",
         "categoria": {
             "nombre": "Accesorios",
             "id": "accesorios"
@@ -82,7 +82,7 @@
     {
         "id": "9",
         "titulo": "Accesorio 02",
-        "imagen": "./img/accesorios/a2.jpg",
+        "imagen": "/img/a2.jpg",
         "categoria": {
             "nombre": "Accesorios",
             "id": "accesorios"
@@ -92,7 +92,7 @@
     {
         "id": "10",
         "titulo": "Accesorio 03",
-        "imagen": "./img/accesorios/a3.jpg",
+        "imagen": "/img/a3.jpg",
         "categoria": {
             "nombre": "Accesorios",
             "id": "accesorios"
@@ -102,7 +102,7 @@
     {
         "id": "11",
         "titulo": "Accesorio 04",
-        "imagen": "./img/accesorios/a4.jpg",
+        "imagen": "/img/a4.jpg",
         "categoria": {
             "nombre": "Accesorios",
             "id": "accesorios"
@@ -112,7 +112,7 @@
     {
         "id": "12",
         "titulo": "Accesorio 05",
-        "imagen": "./img/accesorios/a5.jpg",
+        "imagen": "/img/a5.jpg",
         "categoria": {
             "nombre": "Accesorios",
             "id": "accesorios"
@@ -122,7 +122,7 @@
     {
         "id": "13",
         "titulo": "Accesorio 06",
-        "imagen": "./img/accesorios/a6.jpg",
+        "imagen": "/img/a6.jpg",
         "categoria": {
             "nombre": "Accesorios",
             "id": "accesorios"
@@ -132,7 +132,7 @@
     {
         "id": "14",
         "titulo": "Accesorio 07",
-        "imagen": "./img/accesorios/a7.jpg",
+        "imagen": "/img/a7.jpg",
         "categoria": {
             "nombre": "Accesorios",
             "id": "accesorios"
@@ -142,7 +142,7 @@
     {
         "id": "15",
         "titulo": "Accesorio 08",
-        "imagen": "./img/accesorios/a8.jpg",
+        "imagen": "/img/a8.jpg",
         "categoria": {
             "nombre": "Accesorios",
             "id": "accesorios"
@@ -152,7 +152,7 @@
     {
         "id": "16",
         "titulo": "Accesorio 09",
-        "imagen": "./img/accesorios/a9.jpg",
+        "imagen": "/img/a9.jpg",
         "categoria": {
             "nombre": "Accesorios",
             "id": "accesorios"
@@ -162,7 +162,7 @@
     {
         "id": "17",
         "titulo": "Basquet 01",
-        "imagen": "./img/basquet/b1.jpg",
+        "imagen": "/img/b1.jpg",
         "categoria": {
             "nombre": "Basquet",
             "id": "basquet"
@@ -172,7 +172,7 @@
     {
         "id": "18",
         "titulo": "Basquet 02",
-        "imagen": "./img/basquet/b2.jpg",
+        "imagen": "/img/b2.jpg",
         "categoria": {
             "nombre": "Basquet",
             "id": "basquet"
@@ -182,7 +182,7 @@
     {
         "id": "19",
         "titulo": "Basquet 03",
-        "imagen": "./img/basquet/b3.jpg",
+        "imagen": "/img/b3.jpg",
         "categoria": {
             "nombre": "Basquet",
             "id": "basquet"
@@ -192,7 +192,7 @@
     {
         "id": "20",
         "titulo": "Basquet 04",
-        "imagen": "./img/basquet/b4.jpg",
+        "imagen": "/img/b4.jpg",
         "categoria": {
             "nombre": "Basquet",
             "id": "basquet"
@@ -202,7 +202,7 @@
     {
         "id": "21",
         "titulo": "Basquet 05",
-        "imagen": "./img/basquet/b5.jpg",
+        "imagen": "/img/b5.jpg",
         "categoria": {
             "nombre": "Basquet",
             "id": "basquet"
@@ -212,7 +212,7 @@
     {
         "id": "22",
         "titulo": "Basquet 06",
-        "imagen": "./img/basquet/b6.jpg",
+        "imagen": "/img/b6.jpg",
         "categoria": {
             "nombre": "Basquet",
             "id": "basquet"
