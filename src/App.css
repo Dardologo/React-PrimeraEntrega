@@ -29,3 +29,8 @@
 .card-espacio {
   gap: 2rem;
 }
+
+.espacio-navbar {
+  display: flex;
+  justify-content: space-between;
+}
