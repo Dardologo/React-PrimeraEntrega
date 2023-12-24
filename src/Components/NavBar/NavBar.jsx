@@ -11,13 +11,15 @@ function NavBar() {
   
     <Navbar bg="dark" data-bs-theme="dark">
     <Container fluid className='navbar' >
-      <Navbar.Brand to="/"> <Logo/> </Navbar.Brand>
+      <Navbar.Brand>
+        <Nav.Link as={Link} to='/'> <Logo/> </Nav.Link>
+      </Navbar.Brand>
       <Nav className="me-auto espacio-navbar">
-        <Link to="/">HOME</Link>
-        <Link to="/category/accesorios" >ACCESORIOS</Link>
-        <Link to="/category/futbol" >FUTBOL</Link>
-        <Link to="/category/basquet" >BASQUET</Link>
-        <Link to="/category/cart" > <CartWidget/> </Link>
+        <Nav.Link as={Link} to="/">HOME</Nav.Link>
+        <Nav.Link as={Link} to="/category/accesorios" >ACCESORIOS</Nav.Link>
+        <Nav.Link as={Link} to="/category/futbol" >FUTBOL</Nav.Link>
+        <Nav.Link as={Link} to="/category/basquet" >BASQUET</Nav.Link>
+        <Nav.Link as={Link} to="/category/cart" > <CartWidget/> </Nav.Link>
 
 
       </Nav>
