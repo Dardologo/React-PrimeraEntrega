@@ -1,19 +1,17 @@
 import React from 'react'
+import { Card } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-const Item = ({producto}) => {
+const Item = ({p}) => {
   return (
-    <Link to= {'/item/ '+ producto.id} className='text-decoration-none'>
-    <div className='container'>
-        <div className='card border border-0'>
-            <img src={producto.imagen} className='card-img-top' alt={producto.titulo} />
-            {console.log(producto.imagen)}
-            <div className='card-body text-center'>
-              <p children='card-text'> {producto.categoria.nombre}</p>  
-              <p>${producto.precio}</p>
-              
-            </div>
-        </div>
-
+    <Link to= {'/item/ '+ p.id} className='text-decoration-none'>
+      <div key={p.id}>
+    <Card style={{ width: '18rem' }}>
+        <Card.Img variant="top" src={p.imagen} />
+        <Card.Body>
+            <Card.Title>{p.titulo}</Card.Title>
+            <Card.Title>${p.precio}</Card.Title>
+        </Card.Body>
+    </Card>
     </div>
     </Link>
   )

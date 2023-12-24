@@ -16,10 +16,10 @@ function NavBar() {
       </Navbar.Brand>
       <Nav className="me-auto espacio-navbar">
         <Nav.Link as={Link} to="/">HOME</Nav.Link>
-        <Nav.Link as={Link} to="/category/accesorios" >ACCESORIOS</Nav.Link>
-        <Nav.Link as={Link} to="/category/futbol" >FUTBOL</Nav.Link>
-        <Nav.Link as={Link} to="/category/basquet" >BASQUET</Nav.Link>
-        <Nav.Link as={Link} to="/category/cart" > <CartWidget/> </Nav.Link>
+        <Nav.Link as={Link} to="/categoria/accesorios" >ACCESORIOS</Nav.Link>
+        <Nav.Link as={Link} to="/categoria/futbol" >FUTBOL</Nav.Link>
+        <Nav.Link as={Link} to="/categoria/basquet" >BASQUET</Nav.Link>
+        <Nav.Link as={Link} to="/cart" > <CartWidget/> </Nav.Link>
 
 
       </Nav>

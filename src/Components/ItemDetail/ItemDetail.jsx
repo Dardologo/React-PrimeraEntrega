@@ -1,15 +1,18 @@
 import React from 'react'
+import Card from 'react-bootstrap/Card';
+ 
 
 const ItemDetail = ({producto}) => {
   return (
-    <div className='row'>
-      <div className='col-md-4 iifset-md-4'>
-      <img src={producto.imagen} className='img-fluid' alt={producto.titulo} />
-      <h3>{producto.nombre}</h3>
-      <p>{producto.categoria.nombre}</p>
-      <p>$ {producto.precio}</p>
-      </div>
-    </div>
+    <div key={producto.id}>
+    <Card style={{ width: '18rem' }}>
+        <Card.Img variant="top" src={producto.imagen} />
+        <Card.Body>
+            <Card.Title>{producto.titulo}</Card.Title>
+            <Card.Title>${producto.precio}</Card.Title>
+        </Card.Body>
+    </Card>
+</div>
   )
 }
 

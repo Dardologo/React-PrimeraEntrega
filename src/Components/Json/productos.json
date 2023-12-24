@@ -1,222 +1,156 @@
 [
     {
         "id": "1",
-        "titulo": "Futbol 01",
-        "imagen": "/img/f1.jpg",
-        "categoria": {
-            "nombre": "Futbol",
-            "id": "futbol"
-        },
-        "precio": 1000
+        "titulo": "Accesorio 01",
+        "imagen": "/img/a1.jpg",
+        "categoria": "accesorios",
+        "precio": 8500
     },
     {
         "id": "2",
-        "titulo": "Futbol 02",
-        "imagen": "/img/f2.jpg",
-        "categoria": {
-            "nombre": "Futbol",
-            "id": "futbol"
-        },
-        "precio": 1000
+        "titulo": "Accesorio 02",
+        "imagen": "/img/a2.jpg",
+        "categoria": "accesorios",
+        "precio": 12000
     },
     {
         "id": "3",
-        "titulo": "Futbol 03",
-        "imagen": "/img/f3.jpg",
-        "categoria": {
-            "nombre": "Futbol",
-            "id": "futbol"
-        },
-        "precio": 1000
+        "titulo": "Accesorio 03",
+        "imagen": "/img/a3.jpg",
+        "categoria": "accesorios",
+        "precio": 17500
     },
     {
         "id": "4",
-        "titulo": "Futbol 04",
-        "imagen": "/img/f4.jpg",
-        "categoria": {
-            "nombre": "Futbol",
-            "id": "futbol"
-        },
-        "precio": 1000
+        "titulo": "Accesorio 04",
+        "imagen": "/img/a4.jpg",
+        "categoria": "accesorios",
+        "precio": 24000
     },
     {
         "id": "5",
-        "titulo": "Futbol 05",
-        "imagen": "/img/f5.jpg",
-        "categoria": {
-            "nombre": "Futbol",
-            "id": "futbol"
-        },
-        "precio": 1000
+        "titulo": "Accesorio 05",
+        "imagen": "/img/a5.jpg",
+        "categoria": "accesorios",
+        "precio": 29500
     },
     {
         "id": "6",
-        "titulo": "Futbol 06",
-        "imagen": "/img/f6.jpg",
-        "categoria": {
-            "nombre": "Futbol",
-            "id": "futbol"
-        },
-        "precio": 1000
+        "titulo": "Accesorio 06",
+        "imagen": "/img/a6.jpg",
+        "categoria": "accesorios",
+        "precio": 7500
     },
     {
         "id": "7",
-        "titulo": "Futbol 07",
-        "imagen": "/img/f7.jpg",
-        "categoria": {
-            "nombre": "Futbol",
-            "id": "futbol"
-        },
-        "precio": 1000
+        "titulo": "Accesorio 07",
+        "imagen": "/img/a7.jpg",
+        "categoria": "accesorios",
+        "precio": 16000
     },
     {
         "id": "8",
-        "titulo": "Accesorio 01",
-        "imagen": "/img/a1.jpg",
-        "categoria": {
-            "nombre": "Accesorios",
-            "id": "accesorios"
-        },
-        "precio": 1000
+        "titulo": "Accesorio 08",
+        "imagen": "/img/a8.jpg",
+        "categoria": "accesorios",
+        "precio": 22500
     },
     {
         "id": "9",
-        "titulo": "Accesorio 02",
-        "imagen": "/img/a2.jpg",
-        "categoria": {
-            "nombre": "Accesorios",
-            "id": "accesorios"
-        },
-        "precio": 1000
+        "titulo": "Accesorio 09",
+        "imagen": "/img/a9.jpg",
+        "categoria": "accesorios",
+        "precio": 28000
     },
     {
         "id": "10",
-        "titulo": "Accesorio 03",
-        "imagen": "/img/a3.jpg",
-        "categoria": {
-            "nombre": "Accesorios",
-            "id": "accesorios"
-        },
-        "precio": 1000
+        "titulo": "Basquet 01",
+        "imagen": "/img/b1.jpg",
+        "categoria": "basquet",
+        "precio": 11000
     },
     {
         "id": "11",
-        "titulo": "Accesorio 04",
-        "imagen": "/img/a4.jpg",
-        "categoria": {
-            "nombre": "Accesorios",
-            "id": "accesorios"
-        },
-        "precio": 1000
+        "titulo": "Basquet 02",
+        "imagen": "/img/b2.jpg",
+        "categoria": "basquet",
+        "precio": 16500
     },
     {
         "id": "12",
-        "titulo": "Accesorio 05",
-        "imagen": "/img/a5.jpg",
-        "categoria": {
-            "nombre": "Accesorios",
-            "id": "accesorios"
-        },
-        "precio": 1000
+        "titulo": "Basquet 03",
+        "imagen": "/img/b3.jpg",
+        "categoria": "basquet",
+        "precio": 22000
     },
     {
         "id": "13",
-        "titulo": "Accesorio 06",
-        "imagen": "/img/a6.jpg",
-        "categoria": {
-            "nombre": "Accesorios",
-            "id": "accesorios"
-        },
-        "precio": 1000
+        "titulo": "Basquet 04",
+        "imagen": "/img/b4.jpg",
+        "categoria": "basquet",
+        "precio": 27500
     },
     {
         "id": "14",
-        "titulo": "Accesorio 07",
-        "imagen": "/img/a7.jpg",
-        "categoria": {
-            "nombre": "Accesorios",
-            "id": "accesorios"
-        },
-        "precio": 1000
+        "titulo": "Basquet 05",
+        "imagen": "/img/b5.jpg",
+        "categoria": "basquet",
+        "precio": 6000
     },
     {
         "id": "15",
-        "titulo": "Accesorio 08",
-        "imagen": "/img/a8.jpg",
-        "categoria": {
-            "nombre": "Accesorios",
-            "id": "accesorios"
-        },
-        "precio": 1000
+        "titulo": "Basquet 06",
+        "imagen": "/img/b6.jpg",
+        "categoria": "basquet",
+        "precio": 14500
     },
     {
         "id": "16",
-        "titulo": "Accesorio 09",
-        "imagen": "/img/a9.jpg",
-        "categoria": {
-            "nombre": "Accesorios",
-            "id": "accesorios"
-        },
-        "precio": 1000
+        "titulo": "Futbol 01",
+        "imagen": "/img/f1.jpg",
+        "categoria": "futbol",
+        "precio": 20000
     },
     {
         "id": "17",
-        "titulo": "Basquet 01",
-        "imagen": "/img/b1.jpg",
-        "categoria": {
-            "nombre": "Basquet",
-            "id": "basquet"
-        },
-        "precio": 1000
+        "titulo": "Futbol 02",
+        "imagen": "/img/f2.jpg",
+        "categoria": "futbol",
+        "precio": 25500
     },
     {
         "id": "18",
-        "titulo": "Basquet 02",
-        "imagen": "/img/b2.jpg",
-        "categoria": {
-            "nombre": "Basquet",
-            "id": "basquet"
-        },
-        "precio": 1000
+        "titulo": "Futbol 03",
+        "imagen": "/img/f3.jpg",
+        "categoria": "futbol",
+        "precio": 31000
     },
     {
         "id": "19",
-        "titulo": "Basquet 03",
-        "imagen": "/img/b3.jpg",
-        "categoria": {
-            "nombre": "Basquet",
-            "id": "basquet"
-        },
-        "precio": 1000
+        "titulo": "Futbol 04",
+        "imagen": "/img/f4.jpg",
+        "categoria": "futbol",
+        "precio": 8500
     },
     {
         "id": "20",
-        "titulo": "Basquet 04",
-        "imagen": "/img/b4.jpg",
-        "categoria": {
-            "nombre": "Basquet",
-            "id": "basquet"
-        },
-        "precio": 1000
+        "titulo": "Futbol 05",
+        "imagen": "/img/f5.jpg",
+        "categoria": "futbol",
+        "precio": 14000
     },
     {
         "id": "21",
-        "titulo": "Basquet 05",
-        "imagen": "/img/b5.jpg",
-        "categoria": {
-            "nombre": "Basquet",
-            "id": "basquet"
-        },
-        "precio": 1000
+        "titulo": "Futbol 06",
+        "imagen": "/img/f6.jpg",
+        "categoria": "futbol",
+        "precio": 19500
     },
     {
         "id": "22",
-        "titulo": "Basquet 06",
-        "imagen": "/img/b6.jpg",
-        "categoria": {
-            "nombre": "Basquet",
-            "id": "basquet"
-        },
-        "precio": 1000
+        "titulo": "Futbol 07",
+        "imagen": "/img/f7.jpg",
+        "categoria": "futbol",
+        "precio": 25000
     }
 ]

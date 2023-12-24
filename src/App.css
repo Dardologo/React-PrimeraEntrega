@@ -34,3 +34,12 @@
   display: flex;
   justify-content: space-between;
 }
+
+.Caards{
+  display: flex;
+  justify-content: center; /* Añadido para centrar horizontalmente */
+  flex-wrap: wrap; /* Añadido para permitir que las tarjetas se ajusten en filas */
+  align-items: flex-start; /* Opcional, ajusta según tus necesidades */
+  gap: 16px; /* Espacio entre tarjetas */
+  
+}
