@@ -3,7 +3,7 @@ import { Card } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 const Item = ({p}) => {
   return (
-    <Link to= {'/item/ '+ p.id} className='text-decoration-none'>
+    <Link to= {'/item/'+ p.id} className='text-decoration-none'>
       <div key={p.id}>
     <Card style={{ width: '18rem' }}>
         <Card.Img variant="top" src={p.imagen} />

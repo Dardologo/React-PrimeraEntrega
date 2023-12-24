@@ -2,14 +2,15 @@ import React from 'react'
 import Card from 'react-bootstrap/Card';
  
 
-const ItemDetail = ({producto}) => {
+const ItemDetail = ({produc}) => {
   return (
-    <div key={producto.id}>
+    <div key={produc.id}>
     <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src={producto.imagen} />
+        <Card.Img variant="top" src={produc.imagen} />
         <Card.Body>
-            <Card.Title>{producto.titulo}</Card.Title>
-            <Card.Title>${producto.precio}</Card.Title>
+            <Card.Title>{produc.titulo}</Card.Title>
+            <Card.Title>${produc.precio}</Card.Title>
+            <Card.Title> Aca va a ir la descripcion. Tengo que agregarle a cada objeto del json un atributo nuevo</Card.Title>
         </Card.Body>
     </Card>
 </div>

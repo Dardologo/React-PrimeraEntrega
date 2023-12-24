@@ -1,26 +1,28 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import productos from '../Json/productos.json';
+import productosArray from '../Json/productos.json';
+import ItemDetail from '../ItemDetail/ItemDetail';
 
 
 const ItemDetailContainer = () => {
-  const [producto, setProducto] = useState([]);
+  const [producto, setProducto] = useState(null);
   const { id } = useParams();
 
   useEffect(() => {
     const promesa = new Promise((resolve)=>{
       setTimeout(() => {
-        resolve(productos.find(producto => producto.id === parseInt(id)))
-      }, 2000)
+        resolve(productosArray.find(p => p.id === id))
+      }, 1000)
     });
     promesa.then ((data)=> {
       setProducto(data);
     })
   }, [id])
   return (
-    <div className='container'> 
-      <div className='row'>
-          <ItemDetail producto={producto}/> 
+    <div > 
+      <div >
+        {producto && <ItemDetail produc={producto}/> }
+          
       </div>
     </div>
   )
