@@ -1,11 +1,8 @@
 
 import './App.css'
-import CartWidget from './Components/CartWidget/CartWidget'
-import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer'
-import ItemListContainer from './Components/ItemListContainer/ItemListContainer'
-import Error from './Components/NavBar/Error'
 import NavBar from './Components/NavBar/NavBar'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import AppRouter from './router/AppRouter'
 function App() {
 
 
@@ -14,17 +11,7 @@ function App() {
       <div  >
         <BrowserRouter>
         <NavBar />
-       
-        <Routes>
-        <Route path={'/'} element ={ <ItemListContainer/>}/>
-        <Route path={'/categoria/:id'} element={<ItemListContainer/>}/>  
-        <Route path={'/item/:id'} element={<ItemDetailContainer/>}/>  
-        <Route path={'/cart'} element= {<CartWidget/> } /> 
-        <Route path={'*'} element={<Error/>}/>  
-
-
-        </Routes>
-       
+        <AppRouter/>
         </BrowserRouter>
       </div>
     
