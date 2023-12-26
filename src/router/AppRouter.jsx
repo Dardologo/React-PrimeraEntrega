@@ -1,19 +1,15 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import ItemListContainer from '../Components/ItemListContainer/ItemListContainer'
-
-import CartWidget from '../Components/CartWidget/CartWidget'
-import ItemDetailContainer from '../Components/ItemDetailContainer/ItemDetailContainer'
+import { routes } from './menuRoutes'
 
 const AppRouter = () => {
   return (
     <Routes>
-    
-    <Route path={'/'} element ={ <ItemListContainer/>}/>
-    <Route path={'/categoria/:id'} element={<ItemListContainer/>}/>  
-    <Route path={'/item/:id'} element={<ItemDetailContainer />}/>  
-    <Route path={'/cart'} element= {<CartWidget/> } /> 
-    <Route path={'*'} element={<Error/>}/>  
+    {
+      routes.map(({id, path, Element})=>{
+        return <Route key={id} path={path} element={<Element/>}/>
+      })
+    }
     </Routes>
   )
 }
