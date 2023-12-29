@@ -1,4 +1,6 @@
+import Carrito from "../Components/Carrito/Carrito";
 import CartWidget from "../Components/CartWidget/CartWidget";
+import Checkout from "../Components/CheckOut/Checkout";
 import ItemDetailContainer from "../Components/ItemDetailContainer/ItemDetailContainer";
 import ItemListContainer from "../Components/ItemListContainer/ItemListContainer";
 
@@ -21,12 +23,17 @@ export const routes = [
     {
         id: "cart",
         path: "/cart",
-        Element: CartWidget
+        Element: Carrito
     },
     {
         id: "error",
         path: "*",
         Element: Error
+    },
+    {
+        id: "checkout",
+        path: "/checkout",
+        Element: Checkout
     }
 
 
