@@ -11,7 +11,7 @@ const ItemDetail = ({produc}) => {
         <Card.Body>
             <Card.Title>{produc.titulo}</Card.Title>
             <Card.Title>${produc.precio}</Card.Title>
-            <Card.Title> Aca va a ir la descripcion. Tengo que agregarle a cada objeto del json un atributo nuevo</Card.Title>
+            <Card.Title>-{produc.descripcion}</Card.Title>
         </Card.Body>
         <CounterContainer stock={5} initial={0}/>
   
