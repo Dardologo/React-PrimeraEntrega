@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card';
+import CounterContainer from '../Counter/CounterContainer';
  
 
 const ItemDetail = ({produc}) => {
@@ -12,6 +13,8 @@ const ItemDetail = ({produc}) => {
             <Card.Title>${produc.precio}</Card.Title>
             <Card.Title> Aca va a ir la descripcion. Tengo que agregarle a cada objeto del json un atributo nuevo</Card.Title>
         </Card.Body>
+        <CounterContainer stock={5} initial={0}/>
+  
     </Card>
 </div>
   )
