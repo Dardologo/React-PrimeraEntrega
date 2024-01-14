@@ -5,7 +5,7 @@ import CounterContainer from '../Counter/CounterContainer'
 const Item = ({p}) => {
   return (
     <Link to= {'/item/'+ p.id} className='text-decoration-none'>
-      <div key={p.id}>
+      <div >
     <Card style={{ width: '18rem' }}>
         <Card.Img variant="top" src={p.imagen} />
         <Card.Body>

@@ -9,7 +9,7 @@ function App() {
 
   return (
 
-    <div  >
+    <>
       <BrowserRouter>
 
         <CartContextComponent>
@@ -20,7 +20,7 @@ function App() {
         </CartContextComponent>
 
       </BrowserRouter>
-    </div>
+    </>
 
   )
 }
