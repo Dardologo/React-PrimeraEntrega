@@ -1,12 +1,18 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import { useParams } from 'react-router-dom'
 import productosArray from '../Json/productos.json';
 import ItemDetail from '../ItemDetail/ItemDetail';
+import { CartContext } from '../../context/CartContext';
 
 
 const ItemDetailContainer = () => {
   const [producto, setProducto] = useState({});
   const { id } = useParams();
+
+  const {addToCart, getQuantityById} = useContext(CartContext)
+
+  let totalQuantity = getQuantityById(id)
+  console.log(totalQuantity);
 
   useEffect(() => {
     const promesa = new Promise((resolve)=>{
@@ -26,19 +32,20 @@ const ItemDetailContainer = () => {
     console.log("Se agrego al carrito", producto)
     console.log(cantidad)
 
-    let obj = {
+    let item = {
       ...producto,
       quantity: cantidad,
     };
-    console.log("Este es el producto que se agrega", obj)
+    addToCart (item)
+   
   }
   return (
-    <div > 
+   
       <div >
-        {producto && <ItemDetail produc={producto} onAdd= {onAdd}/> }
+        {producto && <ItemDetail produc={producto} onAdd= {onAdd} initial={totalQuantity}/> }
           
       </div>
-    </div>
+    
   )
 }
 

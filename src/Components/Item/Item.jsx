@@ -11,7 +11,7 @@ const Item = ({p}) => {
         <Card.Body>
             <Card.Title>{p.titulo}</Card.Title>
             <Card.Title>${p.precio}</Card.Title>
-            <CounterContainer stock={5} initial ={1}/>
+            {/* <CounterContainer stock={5} initial ={1}/> */}
         </Card.Body>
     </Card>
     </div>

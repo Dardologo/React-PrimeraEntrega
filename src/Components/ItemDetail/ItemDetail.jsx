@@ -4,7 +4,7 @@ import CounterContainer from '../Counter/CounterContainer';
 import { Button } from 'react-bootstrap';
  
 
-const ItemDetail = ({produc, onAdd}) => {
+const ItemDetail = ({produc, onAdd, initial}) => {
   return (
     <div key={produc.id}>
     <Card style={{ width: '18rem' }}>
@@ -13,8 +13,9 @@ const ItemDetail = ({produc, onAdd}) => {
             <Card.Title>{produc.titulo}</Card.Title>
             <Card.Title>${produc.precio}</Card.Title>
             <Card.Title>-{produc.descripcion}</Card.Title>
+            <h5>Ya tienes {initial} en el carrito</h5>
         </Card.Body>
-        <CounterContainer stock={produc.stock} initial={0} onAdd={onAdd}/>
+        <CounterContainer stock={produc.stock} initial={initial} onAdd={onAdd}/>
         
     </Card>
 </div>
