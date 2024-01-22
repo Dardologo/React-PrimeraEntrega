@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import arrayProductos from '../Json/productos.json';
 import ItemList from './ItemList';
+import ClipLoader from "react-spinners/ClipLoader";
+import { BeatLoader } from 'react-spinners';
 
 
 const ItemListContainer = () => {
@@ -24,6 +26,14 @@ const ItemListContainer = () => {
     };
     fetchData();
   }, [id])
+
+  if(productos.length === 0){
+    return <div>
+            <h2>Cargando...</h2>
+            <BeatLoader size = {40} color= "red"/>
+            </div>
+            }
+    
 
   return (
     <div >
