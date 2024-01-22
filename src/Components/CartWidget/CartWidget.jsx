@@ -3,10 +3,12 @@ import { IoCartOutline } from "react-icons/io5";
 import { CartContext } from '../../context/CartContext';
 
 const CartWidget = () => {
- const {cart} = useContext( CartContext );
+ const {getTotalQuantity} = useContext( CartContext );
+
+ let total = getTotalQuantity();
   return (
     <div>
-        <button><IoCartOutline /><span>{cart.length}</span></button>
+        <button><IoCartOutline /><span>{total}</span></button>
         
     </div>
   )
