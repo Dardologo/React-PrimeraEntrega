@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import productosArray from '../Json/productos.json';
 import ItemDetail from '../ItemDetail/ItemDetail';
 import { CartContext } from '../../context/CartContext';
+import Swal from 'sweetalert2';
 
 
 const ItemDetailContainer = () => {
@@ -29,14 +30,20 @@ const ItemDetailContainer = () => {
   }, [id])
 
   const onAdd = ( cantidad ) =>{
-    console.log("Se agrego al carrito", producto)
-    console.log(cantidad)
 
     let item = {
       ...producto,
       quantity: cantidad,
     };
     addToCart (item)
+
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Producto agregado al carrito",
+      showConfirmButton: false,
+      timer: 1500
+    });
    
   }
   return (

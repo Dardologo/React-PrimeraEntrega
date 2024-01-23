@@ -2,11 +2,18 @@ import React from 'react'
 import Card from 'react-bootstrap/Card';
 import CounterContainer from '../Counter/CounterContainer';
 import { Button } from 'react-bootstrap';
+
+
  
 
 const ItemDetail = ({produc, onAdd, initial}) => {
   return (
+
     <div key={produc.id}>
+      {
+        initial &&  <h4>Ya tienes {initial} unidades </h4>
+      }
+   
     <Card style={{ width: '18rem' }}>
         <Card.Img variant="top" src={produc.imagen} />
         <Card.Body>
