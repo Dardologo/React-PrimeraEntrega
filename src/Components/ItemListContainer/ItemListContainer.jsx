@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import arrayProductos from '../Json/productos.json';
 import ItemList from './ItemList';
-import ClipLoader from "react-spinners/ClipLoader";
 import { BeatLoader } from 'react-spinners';
+import { getDocs, collection, query, where } from "firebase/firestore"
+import { db } from '../../firebaseConfig';
 
 
 const ItemListContainer = () => {
@@ -12,19 +12,29 @@ const ItemListContainer = () => {
 
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const data = await new Promise((resolve) => {
-          setTimeout(() => {
-            resolve(id ? arrayProductos.filter(item => item.categoria === id) : arrayProductos);
-          }, 1000);
-        });
-        setProductos(data);
-      } catch (error) {
-        console.log('Error:', error);
-      }
-    };
-    fetchData();
+    
+    if (!id){
+      let productsCollection = collection(db, "productos");
+      getDocs(productsCollection).then((res)=>{
+        let newArray = res.docs.map( product => {
+          return {id: product.id, ...product.data()}
+        })
+      setProductos(newArray)
+      })
+  
+    }else {
+      let productsCollection = collection(db, "productos");
+      let collectionFiltered = query(productsCollection, where("categoria", "==", id ));
+      getDocs(collectionFiltered).then((res)=>{
+        let newArray = res.docs.map( product => {
+          return {id: product.id, ...product.data()}
+        })
+      setProductos(newArray)
+      })
+    }
+
+    
+
   }, [id])
 
   if(productos.length === 0){

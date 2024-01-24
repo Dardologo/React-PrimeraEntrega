@@ -1,9 +1,10 @@
 import { useState, useEffect, useContext } from 'react'
 import { useParams } from 'react-router-dom'
-import productosArray from '../Json/productos.json';
 import ItemDetail from '../ItemDetail/ItemDetail';
 import { CartContext } from '../../context/CartContext';
 import Swal from 'sweetalert2';
+import { db } from '../../firebaseConfig';
+import { getDoc, collection, doc } from "firebase/firestore"
 
 
 const ItemDetailContainer = () => {
@@ -16,17 +17,10 @@ const ItemDetailContainer = () => {
   console.log(totalQuantity);
 
   useEffect(() => {
-    const promesa = new Promise((resolve)=>{
-      setTimeout(() => {
-        resolve(productosArray.find(p => p.id === id))
-      }, 1000)
-    });
-    promesa.then ((data)=> {
-      setProducto(data);
-    })
-    .catch((err)=>{
-      console.log(err)
-    })
+   let itemCollection = collection(db, "productos");
+   let redDoc = doc(itemCollection, id)
+   getDoc(redDoc).then((res)=>{setProducto({id: res.id, ...res.data()})
+  })
   }, [id])
 
   const onAdd = ( cantidad ) =>{
