@@ -31,7 +31,7 @@ const Carrito = () => {
 
     return (
         <div>
-            <h1>Estoy en el carrito</h1>
+            <h1>Carrito</h1>
 
             {
                 cart.map((producto)=>(
@@ -41,6 +41,7 @@ const Carrito = () => {
                     <h3>{producto.descripcion}</h3>
                     <h2>${producto.precio}</h2>
                     <h2>cantidad: {producto.quantity}</h2>
+                    <img src={producto.imagen} alt={producto.titulo} className='img-carrito' />
                     <Button variant="outline-danger" onClick={() => deleteProductoById(producto.id)}> Eliminar </Button>
                     </div>
                     )
