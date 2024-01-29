@@ -2,8 +2,9 @@ import React, { useContext, useState } from 'react'
 import { CartContext } from '../../context/CartContext'
 import { serverTimestamp } from '@firebase/firestore'
 import { db } from '../../firebaseConfig'
-import { collection, addDoc } from "firebase/firestore"
+import { collection, addDoc, updateDoc, doc } from "firebase/firestore"
 import { Link } from 'react-router-dom'
+
 
 const Checkout = () => {
     const [userData, setUserData] = useState({
@@ -36,8 +37,9 @@ const Checkout = () => {
         const ordersCollection = collection (db , "orders")
         addDoc(ordersCollection , order).then((res)=>setOrderId(res.id))
 
-       
-
+        cart.forEach( (elemento) => {
+            updateDoc( doc(db, "productos", elemento.id ), {stock: elemento.stock - elemento.quantity} )
+        })
     }
 
     return (
