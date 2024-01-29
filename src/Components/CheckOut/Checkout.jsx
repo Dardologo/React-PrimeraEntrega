@@ -1,58 +1,67 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
+import { CartContext } from '../../context/CartContext'
+import { serverTimestamp } from '@firebase/firestore'
+import { db } from '../../firebaseConfig'
+import { collection, addDoc } from "firebase/firestore"
+import { Link } from 'react-router-dom'
 
 const Checkout = () => {
-    // const [nombre, setNombre] = useState("")
-    // const [apellido, setApellido] = useState("")
-    // const [email, setEmail] = useState("")
-
-    const [estados, setEstados] = useState({
-        nombre:"",
-        apellido:"",
+    const [userData, setUserData] = useState({
+        name:"",
+        phone:"",
         email: ""
     })
     const [errores, setErrores] = useState({
-        nombre:"",
-        apellido:"",
+        name:"",
+        phone:"",
         email: ""
     })
+    const [orderId, setOrderId] = useState(null);
+
+    const {cart, getTotalPrice} = useContext ( CartContext )
+    const total = getTotalPrice();
 
     const handleChange = (e)=>{
-        setEstados({...estados, [e.target.name]: e.target.value})
+        setUserData({...userData, [e.target.name]: e.target.value})
     }
     const handleSubmit = (e) => {
-        e.preventDefault()//Hay que poner siempre esto que tenemos un formulario
-        //ACA IRIA TODO LO QUE QUIERO HACER con el formulario. Comunicarse con la bd, pegarle a un endpoint, etc
-        //Aca hacemos las validaciones
-        //nOMBRE: 5 CARACTRES
-
-        if(estados.nombre.length <5 ||!estados.email.includes("@") ){
-            if(estados.nombre.length <5){
-                setErrores({...errores, nombre: "El nombre debe tener mas de 5 caracteres"})
-            }
-            if(!estados.email.includes("@")){
-                setErrores({...errores, email: "El email no es valido"})
-            }
-            return;
+        e.preventDefault()
+        let order = {
+            buyer : userData,
+            items : cart, 
+            total, 
+            date: serverTimestamp()
         }
 
-       console.log(estados)
+        const ordersCollection = collection (db , "orders")
+        addDoc(ordersCollection , order).then((res)=>setOrderId(res.id))
+
+       
+
     }
 
     return (
+        <>
+        {orderId ? (
         <div>
-            <h1>Estoy en el checkout</h1>
+            <h2>Gracias por su compra, su N° de comprobante es {orderId}</h2>
+            <Link to="/">Seguir comprando</Link>
+        </div> ) : (
+           
 
             <form onSubmit={handleSubmit}>
-                <input type="text" name="nombre" placeholder='nombre' onChange={handleChange} />
+                <input type="text" name="name" placeholder='Ingresa tu nombre' onChange={handleChange} />
                 <span style={{color: "crimson"}}>{errores.nombre}</span>
-                <input type="text" name="apellido" placeholder='apellido' onChange={handleChange} />
+                <input type="text" name="phone" placeholder='Ingresa tu telefono' onChange={handleChange} />
                 <span style={{color: "crimson"}}>{errores.apellido}</span>
-                <input type="text" name="mail" placeholder="email" onChange={handleChange} />
+                <input type="text" name="email" placeholder="Ingresa tu mail" onChange={handleChange} />
                 <span style={{color: "crimson"}}>{errores.email}</span>
-                <button type="submit" >Enviar</button>
+                <button type="submit" >Comprar</button>
             </form>
 
-        </div>
+        
+        )}
+        </>
     )
 }
 
