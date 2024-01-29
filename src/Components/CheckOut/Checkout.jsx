@@ -19,7 +19,7 @@ const Checkout = () => {
     })
     const [orderId, setOrderId] = useState(null);
 
-    const {cart, getTotalPrice} = useContext ( CartContext )
+    const {cart, getTotalPrice, clearCart} = useContext ( CartContext )
     const total = getTotalPrice();
 
     const handleChange = (e)=>{
@@ -39,7 +39,9 @@ const Checkout = () => {
 
         cart.forEach( (elemento) => {
             updateDoc( doc(db, "productos", elemento.id ), {stock: elemento.stock - elemento.quantity} )
-        })
+        });
+
+        clearCart();
     }
 
     return (
